@@ -1,0 +1,434 @@
+## This file was created by Tawny-OWL
+## It should not be edited by hand
+Prefix: http://www.w3.org/2002/07/owl#: <http://www.purl.org/ontolink/tawny#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: pattern: <http://www.w3id.org/ontolink/pattern.owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: rehabilitation-therapy-ontology: <http://www.ncl.ac.uk/rto#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: : <http://www.ncl.ac.uk/rto>
+
+
+
+Ontology: <http://www.ncl.ac.uk/rto>
+
+Import: <http://www.purl.org/ontolink/tawny>
+
+Annotations: 
+    http://www.w3.org/2002/07/owl#:name "rehabilitation-therapy-ontology"@en
+
+AnnotationProperty: http://www.w3.org/2002/07/owl#:name
+
+    
+AnnotationProperty: pattern:inpattern
+
+    
+AnnotationProperty: rdfs:comment
+
+    
+AnnotationProperty: rdfs:seeAlso
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+ObjectProperty: rehabilitation-therapy-ontology:perform
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "perform"@en
+    
+    Domain: 
+        rehabilitation-therapy-ontology:Therapist
+    
+    Range: 
+        rehabilitation-therapy-ontology:Therapy
+    
+    
+ObjectProperty: rehabilitation-therapy-ontology:target
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "target"@en
+    
+    Domain: 
+        rehabilitation-therapy-ontology:Therapy
+    
+    Range: 
+        rehabilitation-therapy-ontology:BodyPart,
+        rehabilitation-therapy-ontology:Function
+    
+    
+ObjectProperty: rehabilitation-therapy-ontology:treat
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "treat"@en
+    
+    Domain: 
+        rehabilitation-therapy-ontology:Therapy
+    
+    Range: 
+        rehabilitation-therapy-ontology:Disorder
+    
+    
+Class: rehabilitation-therapy-ontology:AnomicAphasia
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "AnomicAphasia"@en,
+        rdfs:comment "A language dysfunction characterized by the inability to name people and objects that are correctly perceived. The individual is able to describe the object in question, but cannot provide the name. This condition is associated with lesions of the dominant hemisphere involving the language areas, in particular the TEMPORAL LOBE. (From Adams et al., Principles of Neurology, 6th ed, p484)"@en,
+        rdfs:comment "Top ranked subclasses from the semantic graph"@en,
+        rdfs:comment "http://purl.bioontology.org/ontology/MESH/D000849"@en,
+        pattern:inpattern _:genid2147483650
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:Aphasia
+    
+    
+Class: rehabilitation-therapy-ontology:Aphasia
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "Aphasia"@en,
+        rdfs:comment "A cognitive disorder marked by an impaired ability to comprehend or express language in its written or spoken form. This condition is caused by diseases which affect the language areas of the dominant hemisphere. Clinical features are used to classify the various subtypes of this condition. General categories include receptive, expressive, and mixed forms of aphasia."@en,
+        rdfs:comment "Top ranked subclasses from the semantic graph"@en,
+        rdfs:comment "http://purl.bioontology.org/ontology/MESH/D001037"@en,
+        pattern:inpattern _:genid2147483650
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:Disorder
+    
+    
+Class: rehabilitation-therapy-ontology:BodyPart
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "BodyPart"@en,
+        rdfs:comment "Part of the Body Structures"@en,
+        rdfs:comment "http://who.int/icf#s"@en
+    
+    
+Class: rehabilitation-therapy-ontology:ChronicPostStrokeAphasia
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "ChronicPostStrokeAphasia"@en,
+        rdfs:comment "Aphasia that lasts after a stroke"@en,
+        rdfs:comment "Top ranked subclasses from the semantic graph"@en,
+        pattern:inpattern _:genid2147483650
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:Aphasia
+    
+    
+Class: rehabilitation-therapy-ontology:ConductionAphasia
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "ConductionAphasia"@en,
+        rdfs:comment "A type of fluent aphasia characterized by an impaired ability to repeat one and two word phrases, despite retained comprehension. This condition is associated with dominant hemisphere lesions involving the arcuate fasciculus (a white matter projection between Broca's and Wernicke's areas) and adjacent structures. Like patients with Wernicke aphasia (APHASIA, WERNICKE), patients with conduction aphasia are fluent but commit paraphasic errors during attempts at written and oral forms of communication. (From Adams et al., Principles of Neurology, 6th ed, p482; Brain & Bannister, Clinical Neurology, 7th ed, p142; Kandel et al., Principles of Neural Science, 3d ed, p848)"@en,
+        rdfs:comment "Top ranked subclasses from the semantic graph"@en,
+        rdfs:comment "http://purl.bioontology.org/ontology/MESH/D018886"@en,
+        pattern:inpattern _:genid2147483650
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:Aphasia
+    
+    
+Class: rehabilitation-therapy-ontology:ConstraintInducedLanguageTherapy
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "ConstraintInducedLanguageTherapy"@en,
+        rdfs:comment "Constraint Induced Language Therapy (CILT) is an aphasia treatment modeled after Constraint Induced Movement Therapy (CIMT). In CILT, compensatory non-verbal communication modalities are constrained and participants are required to make verbal requests and responses."@en,
+        rdfs:comment "Constraint-induced aphasia therapy (CIAT) is an intensive therapy model based on the forced use of verbal oral language as the sole channel of communication, while any alternative communication mode such as writing, gesturing or pointing are prevented."@en,
+        rdfs:comment "Derived from the semantic graph"@en,
+        rdfs:seeAlso "http://aphasiology.pitt.edu/2293/1/155-250-1-RV-Mozeiko.doc.pdf"@en,
+        rdfs:seeAlso "https://github.com/MohammadHalawani/PhD-datasets/terms-subclasses.csv"@en,
+        rdfs:seeAlso "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5619412/"@en
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:SpeechLanguageTherapy
+    
+    
+Class: rehabilitation-therapy-ontology:ConventionalPhysioTherapy
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "ConventionalPhysioTherapy"@en,
+        rdfs:comment "A currently accepted and widely used physicaltherapy treatment for a certain type of disease, based on the results of past research. "@en,
+        rdfs:comment "Derived from the semantic graph"@en,
+        rdfs:comment "derived from http://purl.obolibrary.org/obo/NCIT_C97149"@en,
+        rdfs:seeAlso "https://github.com/MohammadHalawani/PhD-datasets/terms-subclasses.csv"@en
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:PhysioTherapy
+    
+    
+Class: rehabilitation-therapy-ontology:DailyOccupationPerformanceCognitiveOrientation
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "DailyOccupationPerformanceCognitiveOrientation"@en,
+        rdfs:comment "Cognitive Orientation to daily Occupational Performance (CO-OP; CO-OP Approach TM) is a performance-based treatment approach for children and adults who experience difficulties performing the skills they want to, need to or are expected to perform."@en,
+        rdfs:comment "Top ranked subclasses from the semantic graph"@en,
+        rdfs:seeAlso "https://icancoop.org/pages/the-co-op-approach"@en,
+        pattern:inpattern _:genid2147483649
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:DailyOccupationPerformanceTraining
+    
+    DisjointWith: 
+        rehabilitation-therapy-ontology:DailyOccupationPerformanceKnowledgeTranslation
+    
+    
+Class: rehabilitation-therapy-ontology:DailyOccupationPerformanceKnowledgeTranslation
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "DailyOccupationPerformanceKnowledgeTranslation"@en,
+        rdfs:comment "Knowledge translation related to health has been described as “a dynamic and iterative process that includes the synthesis, dissemination, exchange and ethically sound application of knowledge to improve health, provide more effective health services and products, and strengthen the health care system"@en,
+        rdfs:comment "Top ranked subclasses from the semantic graph"@en,
+        rdfs:seeAlso "https://doi.org/10.1186/s12913-019-3971-y"@en,
+        pattern:inpattern _:genid2147483649
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:DailyOccupationPerformanceTraining
+    
+    DisjointWith: 
+        rehabilitation-therapy-ontology:DailyOccupationPerformanceCognitiveOrientation
+    
+    
+Class: rehabilitation-therapy-ontology:DailyOccupationPerformanceTraining
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "DailyOccupationPerformanceTraining"@en,
+        rdfs:comment "Derived from https://icancoop.org/pages/the-co-op-approach"@en,
+        rdfs:comment "Derived from the semantic graph"@en,
+        rdfs:comment "It is a performance-based treatment that involoves training on the  skills needed to or are expected to perform."@en,
+        rdfs:comment "Top ranked subclasses from the semantic graph"@en,
+        rdfs:seeAlso "https://github.com/MohammadHalawani/PhD-datasets/terms-subclasses.csv"@en,
+        pattern:inpattern _:genid2147483649
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:OccupationalTherapy
+    
+    
+Class: rehabilitation-therapy-ontology:Disorder
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "Disorder"@en,
+        rdfs:comment "Any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function."@en,
+        rdfs:comment "http://purl.obolibrary.org/obo/NCIT_C2991"@en
+    
+    
+Class: rehabilitation-therapy-ontology:Function
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "Function"@en,
+        rdfs:comment "The normal action performed by the Body Functions"@en,
+        rdfs:comment "http://who.int/icf#b"@en
+    
+    
+Class: rehabilitation-therapy-ontology:Gait
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "Gait"@en,
+        rdfs:comment "Manner or style of walking."@en,
+        rdfs:comment "http://purl.bioontology.org/ontology/MESH/D005684"@en
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:Function
+    
+    
+Class: rehabilitation-therapy-ontology:NursePhysioTherapist
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "NursePhysioTherapist"@en,
+        rdfs:comment "Derived from the semantic graph"@en,
+        rdfs:comment "Persons who, under the supervision of licensed PHYSICAL THERAPISTS, provide patient treatment using various PHYSICAL THERAPY TECHNIQUES"@en,
+        rdfs:comment "http://purl.bioontology.org/ontology/MESH/D063372"@en,
+        rdfs:seeAlso "https://github.com/MohammadHalawani/PhD-datasets/terms-subclasses.csv"@en
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:PhysioTherapist
+    
+    
+Class: rehabilitation-therapy-ontology:OccupationalTherapist
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "OccupationalTherapist"@en,
+        rdfs:comment "Professionals trained to help individuals develop or regain skills needed to achieve independence in their lives."@en,
+        rdfs:comment "Top ranked subclasses from the semantic graph"@en,
+        rdfs:comment "http://purl.bioontology.org/ontology/MESH/D000072087"@en,
+        pattern:inpattern _:genid2147483651
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:Therapist
+    
+    DisjointWith: 
+        rehabilitation-therapy-ontology:PhysioTherapist
+    
+    
+Class: rehabilitation-therapy-ontology:OccupationalTherapy
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "OccupationalTherapy"@en,
+        rdfs:comment "Skilled treatment that helps individuals achieve independence in all facets of their lives. It assists in the development of skills needed for independent living."@en,
+        rdfs:comment "Top ranked subclasses from the semantic graph"@en,
+        rdfs:comment "http://purl.bioontology.org/ontology/MESH/D009788"@en,
+        pattern:inpattern _:genid2147483648
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:Rehablitation
+    
+    
+Class: rehabilitation-therapy-ontology:PhysicalTherapist
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "PhysicalTherapist"@en
+    
+    EquivalentTo: 
+        rehabilitation-therapy-ontology:PhysioTherapist
+    
+    
+Class: rehabilitation-therapy-ontology:PhysicalTherapy
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "PhysicalTherapy"@en,
+        rdfs:comment "Therapeutic modalities frequently used in PHYSICAL THERAPY SPECIALTY by PHYSICAL THERAPISTS or physiotherapists to promote, maintain, or restore the physical and physiological well-being of an individual."@en,
+        rdfs:comment "http://purl.bioontology.org/ontology/MESH/D026741"@en
+    
+    EquivalentTo: 
+        rehabilitation-therapy-ontology:PhysioTherapy
+    
+    
+Class: rehabilitation-therapy-ontology:PhysioTherapist
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "PhysioTherapist"@en,
+        rdfs:comment "Persons trained in PHYSICAL THERAPY SPECIALTY to make use of PHYSICAL THERAPY MODALITIES to prevent, correct, and alleviate movement dysfunction."@en,
+        rdfs:comment "Top ranked subclasses from the semantic graph"@en,
+        rdfs:comment "http://purl.bioontology.org/ontology/MESH/D059825"@en,
+        pattern:inpattern _:genid2147483651
+    
+    EquivalentTo: 
+        rehabilitation-therapy-ontology:PhysicalTherapist
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:Therapist
+    
+    DisjointWith: 
+        rehabilitation-therapy-ontology:OccupationalTherapist
+    
+    
+Class: rehabilitation-therapy-ontology:PhysioTherapy
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "PhysioTherapy"@en,
+        rdfs:comment "Top ranked subclasses from the semantic graph"@en,
+        pattern:inpattern _:genid2147483648
+    
+    EquivalentTo: 
+        rehabilitation-therapy-ontology:PhysicalTherapy
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:Rehablitation
+    
+    
+Class: rehabilitation-therapy-ontology:PrimaryProgressiveAphasia
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "PrimaryProgressiveAphasia"@en,
+        rdfs:comment "A progressive form of dementia characterized by the global loss of language abilities and initial preservation of other cognitive functions. Fluent and nonfluent subtypes have been described. Eventually a pattern of global cognitive dysfunction, similar to ALZHEIMER DISEASE, emerges. Pathologically, there are no Alzheimer or PICK DISEASE like changes, however, spongiform changes of cortical layers II and III are present in the TEMPORAL LOBE and FRONTAL LOBE. (From Brain 1998 Jan;121(Pt 1):115-26)"@en,
+        rdfs:comment "Derived from the semantic graph"@en,
+        rdfs:comment "http://purl.bioontology.org/ontology/MESH/D018888"@en,
+        rdfs:seeAlso "https://github.com/MohammadHalawani/PhD-datasets/terms-subclasses.csv"@en
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:ProgressiveAphasia
+    
+    
+Class: rehabilitation-therapy-ontology:ProgressiveAphasia
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "ProgressiveAphasia"@en,
+        rdfs:comment "Aphasia that progresses with time"@en,
+        rdfs:comment "Derived from the semantic graph"@en,
+        rdfs:comment "http://snomed.info/id/230278002"@en,
+        rdfs:seeAlso "https://github.com/MohammadHalawani/PhD-datasets/terms-subclasses.csv"@en
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:ConductionAphasia
+    
+    
+Class: rehabilitation-therapy-ontology:Rehablitation
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "Rehablitation"@en,
+        rdfs:comment "Restoration of human functions to the maximum degree possible in a person or persons suffering from disease or injury."@en,
+        rdfs:comment "Top ranked subclasses from the semantic graph"@en,
+        rdfs:comment "http://purl.bioontology.org/ontology/MESH/D012046"@en,
+        pattern:inpattern _:genid2147483648
+    
+    EquivalentTo: 
+        rehabilitation-therapy-ontology:Therapy
+    
+    
+Class: rehabilitation-therapy-ontology:SpeechLanguageTherapy
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "SpeechLanguageTherapy"@en,
+        rdfs:comment "Therapeutic treatments for speech and language disorders  "@en,
+        rdfs:comment "Top ranked subclasses from the semantic graph"@en,
+        rdfs:comment "http://snomed.info/id/311555007"@en,
+        pattern:inpattern _:genid2147483648
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:Rehablitation
+    
+    
+Class: rehabilitation-therapy-ontology:Therapist
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "Therapist"@en,
+        rdfs:comment "Derived from http://purl.bioontology.org/ontology/MESH/D059825"@en,
+        rdfs:comment "Person trained in Rehabilitation to make use of Therapies to prevent, correct, and alleviate disorders."@en,
+        rdfs:comment "Top ranked subclasses from the semantic graph"@en,
+        pattern:inpattern _:genid2147483651
+    
+    
+Class: rehabilitation-therapy-ontology:Therapy
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "Therapy"@en,
+        rdfs:comment "Used with diseases for therapeutic interventions except drug therapy, diet therapy, radiotherapy, and surgery, for which specific subheadings exist. The concept is also used for articles and books dealing with multiple therapies."@en,
+        rdfs:comment "http://purl.bioontology.org/ontology/MESH/Q000628"@en
+    
+    EquivalentTo: 
+        rehabilitation-therapy-ontology:Rehablitation
+    
+    
+Class: rehabilitation-therapy-ontology:TreadmillTraining
+
+    Annotations: 
+        http://www.w3.org/2002/07/owl#:name "TreadmillTraining"@en,
+        rdfs:comment "Using a treadmill to excersise as a therapeutic regime"@en,
+        rdfs:comment "http://snomed.info/id/113131004"@en,
+        rdfs:comment "modified from the semantic graph"@en,
+        rdfs:seeAlso "https://github.com/MohammadHalawani/PhD-datasets/terms-subclasses.csv"@en
+    
+    SubClassOf: 
+        rehabilitation-therapy-ontology:Therapy,
+        rehabilitation-therapy-ontology:target some rehabilitation-therapy-ontology:Gait
+    
+    
+Individual: _:genid2147483648
+
+    
+Individual: _:genid2147483649
+
+    
+Individual: _:genid2147483650
+
+    
+Individual: _:genid2147483651
+
+    
+DisjointClasses: 
+    rehabilitation-therapy-ontology:AnomicAphasia,rehabilitation-therapy-ontology:ChronicPostStrokeAphasia,rehabilitation-therapy-ontology:ConductionAphasia
+
+DisjointClasses: 
+    rehabilitation-therapy-ontology:OccupationalTherapy,rehabilitation-therapy-ontology:PhysioTherapy,rehabilitation-therapy-ontology:SpeechLanguageTherapy
+
